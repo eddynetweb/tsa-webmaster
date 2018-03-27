@@ -1,0 +1,180 @@
+/*
+* Custom Fonts
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab');
+  
+/*
+* Global Assets
+*/
+
+.container {
+    max-width: 960px;
+}
+
+video {
+    position: absolute;
+    z-index: 0;
+    top: 0px;
+    left: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+/*
+* Generated Animation Assets
+*/
+
+.animatedGround { 
+    background: linear-gradient(50deg, #6871b6, #608dac, #5db1b6, #47b046);
+    background-size: 800% 800%;
+    -webkit-animation: Ambiance 36s ease infinite;
+    -moz-animation: Ambiance 36s ease infinite;
+    -o-animation: Ambiance 36s ease infinite;
+    animation: Ambiance 36s ease infinite;
+}
+
+.animatedChapter { 
+    background: linear-gradient(50deg, #6871b6, #608dac, #5db1b6, #47b046);
+    background-size: 800% 800%;
+    -webkit-animation: Ambiance 36s ease infinite;
+    -moz-animation: Ambiance 36s ease infinite;
+    -o-animation: Ambiance 36s ease infinite;
+    animation: Ambiance 36s ease infinite;
+}
+
+@-webkit-keyframes Ambiance {
+    0%{background-position:100% 0%}
+    50%{background-position:0% 100%}
+    100%{background-position:100% 0%}
+}
+@-moz-keyframes Ambiance {
+    0%{background-position:100% 0%}
+    50%{background-position:0% 100%}
+        100%{background-position:100% 0%}
+}
+@-o-keyframes Ambiance {
+    0%{background-position:100% 0%}
+    50%{background-position:0% 100%}
+    100%{background-position:100% 0%}
+}
+@keyframes Ambiance { 
+    0%{background-position:100% 0%}
+    50%{background-position:0% 100%}
+    100%{background-position:100% 0%}
+}
+
+.display-4 { 
+    font-family: 'Roboto Slab', serif;
+    font-size: 84px; 
+}
+
+.display-6 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 56px; 
+}
+    
+.lead { 
+    font-family: 'Roboto Slab', serif;
+    font-size: 32px; 
+}
+
+.normal-text { 
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px; 
+}
+
+.lead-larger { 
+    font-family: 'Roboto Slab', serif;
+    font-size: 42px;
+}
+
+.lead-largest { 
+    font-family: 'Roboto Slab', serif;
+    font-size: 84px;
+}
+
+.course-text { 
+    font-family: 'Roboto Slab', serif;
+    font-size: 32px;
+}
+
+.circular-image {
+    width: 250px;
+    height: 250px;
+    -webkit-border-radius: 200px;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 200px;
+    -moz-background-clip: padding;
+    border-radius: 200px;
+    background-clip: padding-box;
+    margin: 10px 0 0 8px;
+    display: inline-block; 
+    background-size: cover;
+    background-position: center center;
+}
+
+/*
+* Carousel base class
+*/
+
+.carousel {
+    margin-bottom: 4rem;
+}
+
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 8;
+}
+  
+.carousel-item {
+    height: 32rem;
+    background-color: #777;
+}
+
+/*
+* Translucent Site Header
+*/
+  
+.site-header {
+    background-color: rgba(0, 0, 0, .85);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+  
+.site-header a {
+    color: #999;
+    transition: ease-in-out color .15s;
+}
+  
+.site-header a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+  
+/*
+* Extra utilities
+*/
+  
+.border-top { border-top: 1px solid #e5e5e5; }
+.border-bottom { border-bottom: 1px solid #e5e5e5; }
+  
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+  
+.flex-equal > * {
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
+    flex: 1;
+}
+  
+@media (min-width: 768px) {
+    .flex-md-equal > * {
+      -ms-flex: 1;
+      -webkit-box-flex: 1;
+      flex: 1;
+    }
+}
+  
+.overflow-hidden { overflow: hidden; }
